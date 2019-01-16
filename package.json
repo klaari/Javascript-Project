@@ -1,0 +1,21 @@
+{
+    "name": "Javascript Project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^5.12.0",
+        "eslint-config-prettier": "^3.4.0",
+        "prettier": "^1.15.3"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint src",
+        "format": "npm run prettier -- --write",
+        "prettier": "prettier \"**/*.+(js|jsx|json|css|scss|graphql|vue)\"",
+        "validate": "npm run lint && npm run prettier -- --list-different"
+    },
+    "author": "Kari Laari",
+    "license": "MIT"
+}
